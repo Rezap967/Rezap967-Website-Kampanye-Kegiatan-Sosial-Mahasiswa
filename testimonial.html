@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Dewi Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/Logomu.png" rel="icon" >
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/Logomu.png" alt="Logo" style="height: 40px; width: 40px;">
+        <h1 class="sitename">UBHI</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+              <a href="services.html"><span>Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="services.html#services">Program kami</a></li>
+                <li><a href="clients.html">Organisasi Pendukung</a></li>
+                <li><a href="program_unggulan.html">Program Unggulan</a></li>
+                <li><a href="layanan.html#services-2">Layanan</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+              </ul>
+          </li><li class="dropdown">
+              <a href="#"><span>event</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="event_terbaru.html">Event Kami</a></li>
+                <li><a href="up_coming.html">Up Coming</a></li>
+              </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a href="#" class="btn btn-success rounded-pill px-4 ms-3" data-bs-toggle="modal" data-bs-target="#daftarModal">
+      Daftar Member
+      </a>
+
+
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+  <div class="container position-relative">
+    <h1>Testimonial</h1>
+    <p>Berikut testimoni dari orang-orang yang pernah terlibat dalam kegiatan kami</p>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">testimoni</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- End Page Title -->
+
+<!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonial_1.png" class="testimonial-img" alt="">
+                <h3>Rangga Saputra</h3>
+                <h4>Relawan Sosial</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Kegiatan ini sangat menyentuh hati saya. Melihat senyum warga saat kami berbagi bantuan sungguh pengalaman yang tak terlupakan.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonial_2.png" class="testimonial-img" alt="">
+                <h3>Hanif Nur Fahri</h3>
+                <h4>Mahasiswa Informatika</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Pengalaman ikut dalam kampanye sosial membuat saya sadar pentingnya aksi nyata di tengah masyarakat.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonial_3.png" class="testimonial-img" alt="">
+                <h3>Bayu aji</h3>
+                <h4>Kepala Desa</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mahasiswa menunjukkan semangat luar biasa dalam kegiatan edukasi masyarakat. Saya bangga bisa mendampingi mereka.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonial_4.png" class="testimonial-img" alt="">
+                <h3>Galih Muhya</h3>
+                <h4>Mahasiswa Informatika</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Saya sangat terkesan dengan aksi penghijauan kampus. Ini adalah langkah kecil yang berdampak besar.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Kolom 1: Identitas dan Kontak -->
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/Ubhi.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          <span class="sitename">Website Sosial Mahasiswa</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>UNIVERSITAS</p>
+          <p>BHINNEKA PGRI TULUNGAGUNG</p>
+          <p class="mt-3"><strong>Phone:</strong> <span><a href="tel:+6285724009266">(+62) 857-2400-9266</a></span></p>
+          <p><strong>Email:</strong> <span><a href="mailto:radi87769@gmail.com">radi87769@gmail.com</a></span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href="https://facebook.com/Reza.Adiprasetio" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/rezaap947" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://t.me/Reza_Adip" target="_blank"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+
+      <!-- Kolom 2: Meeting Hours -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Meeting Hours</h4>
+        <ul>
+          <li><i class="bi bi-calendar-event"></i> Senin: 10.00 WIB - Selesai</li>
+          <li><i class="bi bi-calendar-event"></i> Sabtu: 08.00 WIB - Selesai</li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Informasi -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Informasi</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="services.html">Kegiatan</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 4: Lokasi -->
+      <div class="col-lg-2 col-md-6 footer-links">
+        <h4>Location</h4>
+        <p>
+          <i class="bi bi-geo-alt"></i>
+          <a href="https://www.google.com/maps/place/Manggisan,+Plosokandang,+Kedungwaru,+Tulungagung,+Jawa+Timur/" target="_blank">
+            Jl. Mayor Sujadi No.7, Manggisan, Plosokandang, Kec.Kedungwaru, Kab.Tulungagung
+          </a>
+        </p>
+      </div>
+
+      <!-- Kolom 5: Services -->
+      <div class="col-lg-2 col-md-6 footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="services.html">Program Kami</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="clients.html">Organisasi Pendukung</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="program_unggulan.html">Program Unggulan</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="layanan.html">Layanan</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span id="current-year"></span> <strong class="px-1 sitename">Website Kampanye Kegiatan Sosial Mahasiswa</strong>. All Rights Reserved</p>
+  </div>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+
+ </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <div class="modal fade" id="daftarModal" tabindex="-1" aria-labelledby="daftarModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title" id="daftarModalLabel">Form Pendaftaran Member</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formDaftarWA">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Aktif</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="kegiatan" class="form-label">Pilih Kegiatan</label>
+            <select class="form-select" id="kegiatan" required>
+              <option value="">-- Pilih Kegiatan --</option>
+              <option value="Bakti Sosial">Bakti Sosial</option>
+              <option value="Penanaman Pohon">Penanaman Pohon</option>
+              <option value="Kelas Edukasi Anak">Kelas Edukasi Anak</option>
+              <option value="Festival Budaya">Festival Budaya</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Daftar via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.getElementById("formDaftarWA").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const kegiatan = document.getElementById("kegiatan").value;
+
+    if (!nama || !email || !kegiatan) {
+      alert("Mohon lengkapi semua data.");
+      return;
+    }
+
+    const pesan = `Halo! Saya ingin mendaftar sebagai member.%0A%0A👤 Nama: ${nama}%0A📧 Email: ${email}%0A📌 Kegiatan: ${kegiatan}`;
+    const nomorWA = "6285724009266"; // Ganti dengan nomor WA tujuan
+
+    window.open(`https://wa.me/${nomorWA}?text=${pesan}`, "_blank");
+  });
+</script>
+
+</body>
+
+</html>

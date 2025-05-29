@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Event 1 (Figma Workshop) Section
+# CSS khusus untuk halaman event1.html
+--------------------------------------------------------------*/
+
+/* Animasi fade-in saat scroll */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover efek untuk kartu */
+#event-figma .card:hover {
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.25);
+  transform: translateY(-6px);
+  transition: all 0.3s ease;
+}
+
+/* Tombol */
+#event-figma .btn-primary {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#event-figma .btn-primary:hover {
+  background-color: #004bb5;
+  box-shadow: 0 8px 20px rgba(0, 75, 181, 0.5);
+}
+
+/* List detail acara */
+#event-figma ul.list-unstyled li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Responsive image fix */
+#event-figma .card img {
+  transition: transform 0.4s ease;
+}
+#event-figma .card img:hover {
+  transform: scale(1.05);
+}
+
+/* Typography */
+#event-figma h2, #event-figma h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0d6efd;
+}
+#event-figma p, #event-figma ul.list-unstyled {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #6c757d;
+}
