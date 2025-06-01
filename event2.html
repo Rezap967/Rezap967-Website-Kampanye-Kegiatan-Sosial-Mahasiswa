@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Dewi Bootstrap Template</title>
+  <title>Kampanye Kegiatan Sosial Mahasiswa</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -37,14 +37,19 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/Logomu.png" alt="Logo" style="height: 40px; width: 40px;">
         <h1 class="sitename">UBHI</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
+      <nav id="navmenu" class="navmenu d-flex align-items-center">
+        <!-- Tombol Daftar Member, order-1 di mobile, order-lg-2 di desktop -->
+        <a href="#" class="btn btn-success rounded-pill px-4 ms-0 order-1 order-lg-2"
+           data-bs-toggle="modal" data-bs-target="#daftarModal">
+          Daftar Member
+        </a>
+        <ul class="order-2 order-lg-1">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown">
@@ -65,12 +70,11 @@
           </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <!-- Icon menu tetap di sini -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list order-3"></i>
       </nav>
 
-      <a href="#" class="btn btn-success rounded-pill px-4 ms-3" data-bs-toggle="modal" data-bs-target="#daftarModal">
-      Daftar Member
-      </a>
+      
 
 
 
