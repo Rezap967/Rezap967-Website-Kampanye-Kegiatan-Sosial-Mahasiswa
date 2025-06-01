@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Dewi Bootstrap Template</title>
+  <title>Kampanye Kegiatan Sosial Mahasiswa</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,14 +36,19 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/Logomu.png" alt="Logo" style="height: 40px; width: 40px;">
         <h1 class="sitename">UBHI</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
+      <nav id="navmenu" class="navmenu d-flex align-items-center">
+        <!-- Tombol Daftar Member, order-1 di mobile, order-lg-2 di desktop -->
+        <a href="#" class="btn btn-success rounded-pill px-4 ms-0 order-1 order-lg-2"
+           data-bs-toggle="modal" data-bs-target="#daftarModal">
+          Daftar Member
+        </a>
+        <ul class="order-2 order-lg-1">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown">
@@ -64,12 +69,11 @@
           </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <!-- Icon menu tetap di sini -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list order-3"></i>
       </nav>
 
-      <a href="#" class="btn btn-success rounded-pill px-4 ms-3" data-bs-toggle="modal" data-bs-target="#daftarModal">
-      Daftar Member
-      </a>
+      
 
 
 
@@ -95,79 +99,99 @@
 
 
     <!-- About Section -->
-    <section id="about" class="about section bg-light py-5">
+    <section id="about" class="about section py-5 bg-light">
   <div class="container">
-    <div class="row align-items-center gy-5">
-      
+    <div class="row align-items-center gy-5 flex-lg-row flex-column-reverse">
+      <!-- Kolom Kanan: Narasi dan Iconic List -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2 class="text-uppercase fw-bold mb-3" style="color: var(--accent-color); letter-spacing: 1px;">
+          Mahasiswa Bersuara & Bertindak
+        </h2>
+        <p class="lead text-muted mb-4">
+          Kami bukan hanya hadir di ruang kelas. Kami hadir di tengah masyarakat. Kami adalah mahasiswa yang percaya bahwa perubahan besar berawal dari keberanian untuk peduli.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li class="d-flex align-items-start mb-3">
+            <span class="icon-circle bg-success text-white me-3"><i class="bi bi-globe-americas"></i></span>
+            <span><strong>Kami mendengar dunia</strong> — lalu bergerak untuk menjawabnya dengan aksi nyata.</span>
+          </li>
+          <li class="d-flex align-items-start mb-3">
+            <span class="icon-circle bg-info text-white me-3"><i class="bi bi-people-fill"></i></span>
+            <span><strong>Kami belajar bersama</strong> — menyatukan langkah lintas fakultas dan latar belakang.</span>
+          </li>
+          <li class="d-flex align-items-start">
+            <span class="icon-circle bg-warning text-white me-3"><i class="bi bi-lightning-fill"></i></span>
+            <span><strong>Kami jadi solusi</strong> — untuk masalah sosial, pendidikan, hingga kemanusiaan.</span>
+          </li>
+        </ul>
+        <blockquote class="blockquote fst-italic text-muted border-start border-4 ps-3 mb-4" style="border-color: var(--accent-color) !important;">
+          “Aksi kecil hari ini bisa menjadi alasan dunia tersenyum esok hari.”
+        </blockquote>
+        <div class="row g-3">
+          <div class="col-6 col-md-4">
+            <div class="bg-white rounded-4 shadow-sm p-3 text-center h-100" data-aos="zoom-in" data-aos-delay="100">
+              <i class="bi bi-people-fill fs-2 text-success mb-2"></i>
+              <div class="fw-bold">100+</div>
+              <small class="text-muted">Relawan Aktif</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="bg-white rounded-4 shadow-sm p-3 text-center h-100" data-aos="zoom-in" data-aos-delay="200">
+              <i class="bi bi-award-fill fs-2 text-warning mb-2"></i>
+              <div class="fw-bold">12</div>
+              <small class="text-muted">Penghargaan</small>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="bg-white rounded-4 shadow-sm p-3 text-center h-100" data-aos="zoom-in" data-aos-delay="300">
+              <i class="bi bi-globe2 fs-2 text-info mb-2"></i>
+              <div class="fw-bold">20+</div>
+              <small class="text-muted">Aksi Sosial</small>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Kolom Kiri: Gambar Besar -->
-      <div class="col-lg-6" data-aos="fade-up">
-        <div class="position-relative rounded-4 overflow-hidden shadow-sm">
-          <img src="assets/img/about.jpg" class="img-fluid" alt="Aksi Sosial Mahasiswa">
-          <div class="position-absolute top-0 start-0 bg-accent text-white px-4 py-2 rounded-end">
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="position-relative rounded-4 overflow-hidden shadow-lg">
+          <img src="assets/img/about.jpg" class="img-fluid w-100" alt="Aksi Sosial Mahasiswa" style="object-fit: cover; min-height: 320px;">
+          <div class="position-absolute top-0 start-0 bg-accent text-white px-4 py-2 rounded-end shadow" style="font-weight: 500;">
             <i class="bi bi-megaphone-fill me-2"></i> Kami Bergerak, Bukan Diam
           </div>
         </div>
       </div>
-
-      <!-- Kolom Kanan: Narasi dan Iconic List -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <h2 class="text-uppercase text-primary fw-bold mb-3">Mahasiswa Bersuara & Bertindak</h2>
-        <p class="lead text-muted mb-3">
-          Kami bukan hanya hadir di ruang kelas. Kami hadir di tengah masyarakat. Kami adalah mahasiswa yang percaya bahwa perubahan besar berawal dari keberanian untuk peduli.
-        </p>
-
-        <ul class="list-unstyled mb-4">
-          <li class="d-flex align-items-start mb-3">
-            <i class="bi bi-globe-americas text-success fs-4 me-3"></i>
-            <span><strong>Kami mendengar dunia</strong> — lalu bergerak untuk menjawabnya dengan aksi nyata.</span>
-          </li>
-          <li class="d-flex align-items-start mb-3">
-            <i class="bi bi-people-fill text-info fs-4 me-3"></i>
-            <span><strong>Kami belajar bersama</strong> — menyatukan langkah lintas fakultas dan latar belakang.</span>
-          </li>
-          <li class="d-flex align-items-start">
-            <i class="bi bi-lightning-fill text-warning fs-4 me-3"></i>
-            <span><strong>Kami jadi solusi</strong> — untuk masalah sosial, pendidikan, hingga kemanusiaan.</span>
-          </li>
-        </ul>
-
-        <blockquote class="blockquote fst-italic text-muted border-start ps-3">
-          “Aksi kecil hari ini bisa menjadi alasan dunia tersenyum esok hari.”
-        </blockquote>
-      </div>
-
     </div>
-
-    <!-- Baris Kedua: Gambar Tambahan -->
+    <!-- Gambar Tambahan -->
     <div class="row mt-5" data-aos="fade-up" data-aos-delay="150">
       <div class="col-lg-12">
         <div class="d-flex justify-content-center">
-         <img src="assets/img/about-2.jpg" class="img-fluid rounded-4 shadow" alt="Mahasiswa Kegiatan Sosial" style="max-width: 50%;">
+          <img src="assets/img/about-2.jpg" class="img-fluid rounded-4 shadow" alt="Mahasiswa Kegiatan Sosial" style="max-width: 400px;">
         </div>
       </div>
     </div>
-
-    <!-- Baris Ketiga: Visi dan Misi -->
-    <div class="row mt-4" data-aos="fade-up" data-aos-delay="300">
-      <div class="col-lg-6">
-        <h3 class="text-primary fw-bold">Visi</h3>
-        <p class="text-muted">
-          Menjadi agen perubahan sosial yang inspiratif dan berdampak luas dalam membangun masyarakat yang adil, inklusif, dan berkelanjutan.
-        </p>
+    <!-- Visi dan Misi -->
+    <div class="row mt-5 g-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-md-6">
+        <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+          <h3 class="fw-bold mb-3" style="color: var(--accent-color);">Visi</h3>
+          <p class="text-muted mb-0">
+            Menjadi agen perubahan sosial yang inspiratif dan berdampak luas dalam membangun masyarakat yang adil, inklusif, dan berkelanjutan.
+          </p>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <h3 class="text-primary fw-bold">Misi</h3>
-        <ul class="text-muted">
-          <li>Mendorong partisipasi aktif mahasiswa dalam berbagai aksi sosial dan kemanusiaan.</li>
-          <li>Membangun jaringan kolaborasi lintas fakultas dan komunitas masyarakat.</li>
-          <li>Mengembangkan program edukasi yang meningkatkan kesadaran sosial dan kepedulian.</li>
-          <li>Menciptakan solusi inovatif untuk masalah sosial di lingkungan sekitar.</li>
-        </ul>
+      <div class="col-md-6">
+        <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+          <h3 class="fw-bold mb-3" style="color: var(--accent-color);">Misi</h3>
+          <ul class="text-muted mb-0 ps-3">
+            <li>Mendorong partisipasi aktif mahasiswa dalam berbagai aksi sosial dan kemanusiaan.</li>
+            <li>Membangun jaringan kolaborasi lintas fakultas dan komunitas masyarakat.</li>
+            <li>Mengembangkan program edukasi yang meningkatkan kesadaran sosial dan kepedulian.</li>
+            <li>Menciptakan solusi inovatif untuk masalah sosial di lingkungan sekitar.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-
-
 </section><!-- End About Section -->
 
   </main>
